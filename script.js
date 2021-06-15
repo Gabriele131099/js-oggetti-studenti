@@ -1,5 +1,3 @@
-var stampa = document.getElementById("stampa")
-
 function run() {
     var arrayStudente = {
         student: []
@@ -41,19 +39,14 @@ function run() {
             varMomentanea += '<li>' + key + ': ' + arrayStudente[key] + '</li>'
         }
     }
-    
-    stampa.innerHTML += varMomentanea;
-    
-        
+    stampa.innerHTML += varMomentanea;   
 }
-
-
-    function svuota() {  
-        document.getElementById("name").value = "";
-        document.getElementById("surname").value = "";
-        document.getElementById("age").value = "";
-    
-      }
+function svuota() 
+{  
+    document.getElementById("name").value = "";
+    document.getElementById("surname").value = "";
+    document.getElementById("age").value = "";
+}
 
 
     
