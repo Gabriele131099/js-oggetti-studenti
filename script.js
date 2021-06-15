@@ -11,7 +11,7 @@ function run() {
         surname: surname,
         age: age
     });
-    
+
     
     for (var key in arrayStudente) {
         console.log(key, arrayStudente[key])
