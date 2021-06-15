@@ -9,21 +9,15 @@ function run() {
     var name = document.getElementById("name").value
     var surname = document.getElementById("surname").value
     var age = document.getElementById("age").value
-    if (name === "") {
+    while (name === "") {
         name = prompt("inserisci il nome")
-    } else {
-        name = document.getElementById("name").value
     }
-    if (surname === "") {
+    while (surname === "") {
         surname = prompt("inserisci il cognome")
-    } else {
-        surname = document.getElementById("surname").value
-    }
-    if (age === "") {
+    } 
+    while (age === "") {
         age = prompt("inserisci l'età")
-    } else {
-        age = document.getElementById("age").value
-    }
+    } 
 
     
     var matricola = surname + age + g
