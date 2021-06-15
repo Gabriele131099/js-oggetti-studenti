@@ -9,13 +9,13 @@ function run() {
     var name = document.getElementById("name").value
     var surname = document.getElementById("surname").value
     var age = document.getElementById("age").value
-    while (name === "") {
+    while (name === "" || name === null) {
         name = prompt("inserisci il nome")
     }
-    while (surname === "") {
+    while (surname === "" || surname === null) {
         surname = prompt("inserisci il cognome")
     } 
-    while (age === "") {
+    while (age === "" || age === null) {
         age = prompt("inserisci l'età")
     } 
 
