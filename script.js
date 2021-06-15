@@ -3,7 +3,7 @@ function run() {
     var arrayStudente = {
         student: [
             {name:"Tony" , surname:"D'Agata" , age:26, matricola:"D'Agata"+g},
-            {name:"Dayron" , surname:"Aguilera" , age:35, matricola:g, matricola:"Aguilera"+g}
+            {name:"Dayron" , surname:"Aguilera" , age:35, matricola:"Aguilera"+g}
         ]
     }
     
