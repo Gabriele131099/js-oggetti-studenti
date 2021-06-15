@@ -1,19 +1,19 @@
 function run() {
     var arrayStudente = {
         student: []
-     }
-        
-        var name = document.getElementById("name").value
-        var surname = document.getElementById("surname").value
-        var age = parseInt(document.getElementById("age").value)
+    }
     
-        // lo facciamo in un modo un po' "anonimo", per evitare dopo
-        // di sovrascrivere lo stesso oggetto.
-        arrayStudente.student.push({
-            name: name,
-            surname: surname,
-            age: age
-        });
+    var name = document.getElementById("name").value
+    var surname = document.getElementById("surname").value
+    var age = parseInt(document.getElementById("age").value)
+    
+    // lo facciamo in un modo un po' "anonimo", per evitare dopo
+    // di sovrascrivere lo stesso oggetto.
+    arrayStudente.student.push({
+        name: name,
+        surname: surname,
+        age: age
+    });
     
     
     for (var i = 0; i < arrayStudente.student.length; i++) {
@@ -25,3 +25,10 @@ function run() {
     
     return arrayStudente
 }
+    function svuota() {  
+        document.getElementById("name").value = "";
+        document.getElementById("surname").value = "";
+        document.getElementById("age").value = "";
+    
+      }
+    
