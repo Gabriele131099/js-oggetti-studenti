@@ -1,15 +1,21 @@
+var g =0
 function run() {
     var arrayStudente = {
-        student: []
+        student: [
+            {name:"Tony" , surname:"D'Agata" , age:26, matricola:"D'Agata"+g},
+            {name:"Dayron" , surname:"Aguilera" , age:35, matricola:g, matricola:"Aguilera"+g}
+        ]
     }
     
     var name = document.getElementById("name").value
     var surname = document.getElementById("surname").value
     var age = parseInt(document.getElementById("age").value)
-        arrayStudente.student.push({
+    var matricola = surname + age + g
+    arrayStudente.student.push({
         name: name,
         surname: surname,
-        age: age
+        age: age,
+        matricola: matricola
     });
 
     
@@ -31,6 +37,8 @@ function run() {
                 varMomentanea += arrayStudente[key][x]['name'] + ', ';
                 varMomentanea += arrayStudente[key][x]['surname'] + ', ';
                 varMomentanea += arrayStudente[key][x]['age'] + ', ';
+                varMomentanea += arrayStudente[key][x]['matricola'] + ', </br>';
+
             }
     
             varMomentanea += '</li>';
@@ -39,7 +47,8 @@ function run() {
             varMomentanea += '<li>' + key + ': ' + arrayStudente[key] + '</li>'
         }
     }
-    stampa.innerHTML += varMomentanea;   
+    stampa.innerHTML += varMomentanea;  
+    return g++ 
 }
 function svuota() 
 {  
